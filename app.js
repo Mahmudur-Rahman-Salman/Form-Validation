@@ -31,15 +31,11 @@ form.addEventListener("submit", function (e) {
     const confirm = document.getElementById("retypePassError");
     confirm.textContent = "Password doesn't match";
   }
- 
-  // if (password !== "/^(?=.*d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/") {
-  //   const passErrorMessage = document.getElementById("passError");
-  //   passErrorMessage.textContent =
-  //     "Password must be 8 letter password, with at least a symbol, upper and lower case letters and a number";
-  // }
 
   console.log("Name: ", name);
   console.log("Email: ", email);
   console.log("Password: ", password);
   console.log("RetypePassword: ", retypePassword);
+
+  form.reset(); 
 });
