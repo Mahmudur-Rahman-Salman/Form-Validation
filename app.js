@@ -36,6 +36,6 @@ form.addEventListener("submit", function (e) {
   console.log("Email: ", email);
   console.log("Password: ", password);
   console.log("RetypePassword: ", retypePassword);
-
+  alert("Your form is submitted"); 
   form.reset(); 
 });
